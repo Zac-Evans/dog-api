@@ -18,6 +18,7 @@ $(document).ready(function() {
         console.log('submit button clicked')
 
         var favoriteDog = document.getElementById('favoriteDogFormInput').value;
+        var favoriteDog = favoriteDog.toLowerCase();
         console.log(favoriteDog)
 
         
@@ -32,8 +33,7 @@ $(document).ready(function() {
                 $('#submitButton').text('Sorry! That aint no doggo. Try again.');
                 $('#randomDogImage').html('');
 
-            });
-            
+            });  
         });
     });
 
@@ -41,7 +41,6 @@ $(document).ready(function() {
 function renderDogImage(image){
     return `
     <a href="${image}" data-lightbox="${image}" data-title="Mmmm that's a good boy."><img src="${image}" class="mw-100" /></a>
-    
     `;
 }
 
