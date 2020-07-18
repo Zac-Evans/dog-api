@@ -23,10 +23,13 @@
                 margin-right: auto;
                 max-width: 900px;
             }
+            .max-height {
+                
+            }
         </style>
 
     </head> 
-    <body>
+    <body class="bg-dark">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <a class="navbar-brand" href="#">
@@ -46,8 +49,8 @@
               </div>
         </nav>
 
-        <div class="container-fluid p-2">
-            <div class="row mt-4">
+        <div class="container-fluid p-4 mt-4 bg-light rounded">
+            <div class="row">
                 <div class="col-3">
                     <div class="card" id="card-1">
                         <a href="images/dog-image-1.jpg" class="" data-lightbox="dog-image-1" data-title="dog-image-1" data-alt="dog-image-1"><img src='images/dog-image-1.jpg' class="mw-100"></a>
@@ -73,7 +76,7 @@
         
             <div class="row mt-4">
                 <div class="col-md-8">
-                    <form class="border border-dark rounded p-3 pb-3">
+                    <form class="border border-dark rounded border- p-3 pb-3">
                         <div class="form-group row">
                             <label for="nameFormInput" class="col-2 col-form-label">Name</label>
                             <div class="col-10">
@@ -98,13 +101,29 @@
                 </div>
                 
                 <div class="col-md-4">
-                    <div id="randomDogImage" alt="randomDogImage"><img src="images/dog-logo.png"  class="img-fluid">
+                    <div id="randomDogImage" alt="randomDogImage" class="max-height"><img src="images/dog-logo.png" class="img-fluid">
                     </div>
                     <div>
                         <button type="button" class="btn btn-primary btn-lg btn-block mt-3" id="generateRandomDog">Generate Random Dog!</button>
                     </div>
                 </div>         
             </div>
+
+            <!-- <div class='row'>
+                <div class='col-12 p-5 '>
+                    <div id="randomDogCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="randomDogCarouselOne">
+                                <img class="d-block w-100" src="" alt="First slide">
+                            </div>
+                            <div class="carousel-item" id="randomDogCarouselTwo">
+                                <img class="d-block w-100" src="" alt="Second slide">
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div> -->
+            
         </div>
     
 
