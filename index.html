@@ -29,13 +29,16 @@
             .max-height {
                 max-height: 300px;
             }
-            .center {
+            .super-center {
                 margin: 0;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
+            }
+            .center {
+                margin: 0 auto;
             }
             .main-border {
                 border: 5px solid black;
@@ -115,8 +118,12 @@
                             <textarea class="form-control" id="moreInfoFormInput"></textarea>
                         </div>
                         
-                        <button type="submit" id="submitButton" class="btn btn-primary btn-lg mb-1">Submit</button>
-                        <button type="button" class="btn btn-primary btn-lg ml-4 mb-1" id="generateRandomDog">Generate Random Dog!</button>
+                        <div class='row center'>
+                            <button type="submit" id="submitButton" class="btn btn-primary btn-md mb-1 center">Submit</button>
+
+                        <button type="button" class="btn btn-primary btn-md ml-4 mb-1 center" id="generateRandomDog">Generate Random Dog!</button>
+                        </div>
+                        
                         
                     </form>
                 </div>
