@@ -22,9 +22,18 @@
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 900px;
+                position: relative;
             }
             .max-height {
-                
+                max-height: 300px;
+            }
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
             }
         </style>
 
@@ -49,7 +58,7 @@
               </div>
         </nav>
 
-        <div class="container-fluid p-4 mt-4 bg-light rounded">
+        <div class="container-fluid p-4 mt-4 bg-light rounded center">
             <div class="row">
                 <div class="col-3">
                     <div class="card" id="card-1">
@@ -76,7 +85,7 @@
         
             <div class="row mt-4">
                 <div class="col-md-8">
-                    <form class="border border-dark rounded border- p-3 pb-3">
+                    <form class="border border-dark rounded p-3 pb-3">
                         <div class="form-group row">
                             <label for="nameFormInput" class="col-2 col-form-label">Name</label>
                             <div class="col-10">
@@ -96,6 +105,7 @@
                         </div>
                         
                         <button type="submit" id="submitButton" class="btn btn-primary btn-lg mb-1">Submit</button>
+                        <button type="button" class="btn btn-primary btn-lg ml-4 mb-1" id="generateRandomDog">Generate Random Dog!</button>
                         
                     </form>
                 </div>
@@ -103,9 +113,7 @@
                 <div class="col-md-4">
                     <div id="randomDogImage" alt="randomDogImage" class="max-height"><img src="images/dog-logo.png" class="img-fluid">
                     </div>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block mt-3" id="generateRandomDog">Generate Random Dog!</button>
-                    </div>
+                
                 </div>         
             </div>
 

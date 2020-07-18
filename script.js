@@ -25,6 +25,7 @@ $(document).ready(function() {
             (function (data) {
                 console.log(data);
                 $('#randomDogImage').html(renderDogImage(data.message));
+                // $('#randomDogImage').css("max-height");
             })
             .fail(function (error) {
                 console.log(error);
