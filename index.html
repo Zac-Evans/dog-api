@@ -35,12 +35,21 @@
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
             }
+            .main-border {
+                border: 5px solid black;
+                box-shadow: 2px 3px 6px 7px rgb(175, 175, 175);
+            }
+            .border-lower {
+                border-bottom: 5px solid black;
+                box-shadow: 2px 3px 6px 7px rgb(175, 175, 175);
+            }
+            
         </style>
 
     </head> 
-    <body class="bg-dark">
+    <body style="background-image: url('https://furbridge.org/wp-content/uploads/2018/01/240_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg');">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info border-lower">
             <a class="navbar-brand" href="#">
                 <img src="https://img.icons8.com/pastel-glyph/64/000000/dog--v2.png"/>
             </a>
@@ -58,7 +67,7 @@
               </div>
         </nav>
 
-        <div class="container-fluid p-4 mt-4 bg-light rounded center">
+        <div class="container-fluid p-4 mt-4 bg-light rounded center main-border">
             <div class="row">
                 <div class="col-3">
                     <div class="card" id="card-1">
@@ -111,7 +120,7 @@
                 </div>
                 
                 <div class="col-md-4">
-                    <div id="randomDogImage" alt="randomDogImage" class="max-height"><img src="images/dog-logo.png" class="img-fluid">
+                    <div id="randomDogImage" alt="randomDogImage"><img src="images/dog-logo.png" class="img-fluid">
                     </div>
                 
                 </div>         
