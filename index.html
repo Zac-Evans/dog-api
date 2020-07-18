@@ -17,6 +17,13 @@
 
         <script src="script.js"></script>
 
+        <style>
+            .container-fluid {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 900px;
+            }
+        </style>
 
     </head> 
     <body>
@@ -39,7 +46,7 @@
               </div>
         </nav>
 
-        <div class="container-lg p-2">
+        <div class="container-fluid p-2">
             <div class="row mt-4">
                 <div class="col-3">
                     <div class="card" id="card-1">
@@ -62,9 +69,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="d-flex flex-row row mt-4">
+        
+        
+            <div class="row mt-4">
                 <div class="col-md-8">
                     <form class="border border-dark rounded p-3 pb-3">
                         <div class="form-group row">
@@ -77,6 +84,7 @@
                             <label for="favoriteDogFormInput" class="col-2 col-form-label">Favorite Dog Breed</label>
                             <div class="col-10">
                                 <input type="text" label="Favorite Dog" class="form-control" id="favoriteDogFormInput">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your favorite dog with anyone else.</small>
                             </div> 
                         </div>
                         <div class="form-group">
@@ -84,16 +92,16 @@
                             <textarea class="form-control" id="moreInfoFormInput"></textarea>
                         </div>
                         
-                        <button type="submit" id="submitButton" class="btn btn-primary btn-lg mb-3">Submit</button>
+                        <button type="submit" id="submitButton" class="btn btn-primary btn-lg mb-1">Submit</button>
                         
                     </form>
                 </div>
                 
                 <div class="col-md-4">
-                    <div id="randomDogImage" alt="randomDogImage"><img src="images/dog-logo.png" class="img-fluid">
+                    <div id="randomDogImage" alt="randomDogImage"><img src="images/dog-logo.png"  class="img-fluid">
                     </div>
                     <div>
-                        <button type="button mb-2" class="btn btn-primary btn-lg btn-block mt-3" id="generateRandomDog">Generate Random Dog!</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block mt-3" id="generateRandomDog">Generate Random Dog!</button>
                     </div>
                 </div>         
             </div>
