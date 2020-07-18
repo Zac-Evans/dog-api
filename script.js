@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#generateRandomDog').click(function() {
         console.log('button clicked')
-        $.get('https://dog.ceo/api/breeds/image/random/').done
+        $.get('https://cors-anywhere.herokuapp.com/https://dog.ceo/api/breeds/image/random/').done
             (function (data) {
                 console.log(data);
                 $('#randomDogImage').html(renderDogImage(data.message));
@@ -22,7 +22,7 @@ $(document).ready(function() {
         console.log(favoriteDog)
 
         
-        $.get(`https://dog.ceo/api/breed/${favoriteDog}/images/random`).done
+        $.get(`https://cors-anywhere.herokuapp.com/https://dog.ceo/api/breed/${favoriteDog}/images/random`).done
             (function (data) {
                 console.log(data);
                 $('#randomDogImage').html(renderDogImage(data.message));
