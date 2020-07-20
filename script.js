@@ -69,7 +69,7 @@ $(document).ready(function() {
 
 function renderDogImage(image){
     return `
-    <a href="${image}" data-lightbox="${image}" data-title="Mmmm that's a good boy."><img src="${image}" class="mw-100" /></a>
+    <a href="${image}" data-lightbox="${image}" data-title="Mmmm that's a good boy."><img src="${image}" class="mw-100 center mh-100" /></a>
     `;
 }
 
