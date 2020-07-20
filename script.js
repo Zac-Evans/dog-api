@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    // $.get('https://cors-anywhere.herokuapp.com/https://dog.ceo/api/breeds/image/random/').done
+    // $.get('https://dog.ceo/api/breeds/image/random/').done
     //     (function (data) {
     //         $('#randomDogCarouselOne').html(renderDogImage(data.message))
     //         })
@@ -9,7 +9,7 @@ $(document).ready(function() {
     //         });
         
     // setInterval (function() {
-    //     $.get('https://cors-anywhere.herokuapp.com/https://dog.ceo/api/breeds/image/random/').done
+    //     $.get('https://dog.ceo/api/breeds/image/random/').done
     //         (function (data) {
     //             $('#randomDogCarouselOne').html(renderDogImage(data.message))
     //             $('#randomDogCarouselTwo').html(renderDogImage(data.message));
@@ -50,7 +50,7 @@ $(document).ready(function() {
 
         
         
-    $.get(`https://cors-anywhere.herokuapp.com/https://dog.ceo/api/breed/${favoriteDog}/images/random`).done
+    $.get(`https://dog.ceo/api/breed/${favoriteDog}/images/random`).done
         (function (data) {
             console.log(data);
             $('#randomDogImage').html(renderDogImage(data.message));
@@ -60,9 +60,9 @@ $(document).ready(function() {
             console.log(error);
             $('#submitButton').text('Sorry! That aint no doggo. Try again.');
             $('#randomDogImage').html('');
-        });  
+            });  
+        });
     });
-});
 
    
 
